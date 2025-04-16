@@ -1,5 +1,7 @@
 pipeline {
-agent any
+agent {
+  label 'nitinnode'
+}
 parameters {
 choice(
 name: 'ENVIRONMENT',
